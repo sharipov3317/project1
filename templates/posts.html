@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+
+{% block title %}
+
+Все записи на сайте
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container mt-5">
+    <div class="header">
+        <img class="logo" src="static/ap.jpg" alt="wallpaper">
+        <h1>БУРГЕР</h1>
+        <h2>Добро Пожаловать</h2>
+    </div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/posts.css') }}">
+    {% if articles|length > 0 %}
+        {% for el in articles %}
+        <div class="alerts ">
+            <h1>Запис на сайте</h1><br>
+            <p>{{ el.title }}</p>
+            <p>{{el.intro}}</p>
+            <p><b>Дата: {{el.date.date() }}</b></p>
+            <!--<p><b>{{el.title.title() }}</b></p>-->
+            <a href="/posts/{{el.id}}" class="btn btn-warning">Детальнее</a>
+        </div>
+        {% endfor %} 
+   {% else %}
+   <h3>У нас еще нет записи на сайте!!!</h3>
+   {% endif %}
+</div>
+{% endblock %}

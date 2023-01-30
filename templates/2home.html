@@ -1,0 +1,66 @@
+{% extends 'home.html'%}
+<!DOCTYPE html>
+<html lang="RU">
+{% block body %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <body>
+        <span id="warning-container"></span>
+      <div class="container">
+        <div class="header">
+            <img class="logo" src="static/ap.jpg" alt="wallpaper">
+            <h1>БУРГЕР</h1>
+            <h2>Добро Пожаловать</h2>
+        </div>
+        <div class="links">
+            <a href="/">Главная</a> 
+            <a href="/2home">Меню</a>
+            <a href="/3home">О нашей кафе</a>
+            <a href="/create-article">Регистрация</a>
+        </div>
+        <div class="content">
+            <div class="left">
+                <p>Меню</p>
+                <a href="/">Напитки</a>
+                <a href="/">Десерты</a>
+                <a href="/">Салаты</a>
+                <a href="/">мороженое</a>
+            </div>
+            <div class="right">
+                <h2>Список</h2>
+                <div class="block">
+                   <img id="1" class="img" src="static/smaller.jpg" alt="wallpaper">
+                   <div class="text">
+                    <h3>Бургер маленкий</h3>
+                    <p>200г, котлет, помидор, сир, соус, огурец и.т.д</p>
+                   </div>
+                </div>
+                <div class="block">
+                    <img id="2" class="img" src="static/small.jpg" alt="wallpaper">
+                    <div class="text">
+                        <h3>Бургер середний</h3>
+                        <p>300г, два коклета, два сира, помидор, огурец, соус и.т.д</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <img id="3" class="img" src="static/big.jpg" alt="wallpaper">
+                    <div class="text">
+                        <h3>Бургер болшой</h3>
+                        <p>400г, два коклета, два сира, помидор, огурец, соус и.т.д</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="copyright">
+                <p>Copyright 2022 &copy;</p>
+            </div>
+            <div class="email">
+                <a>Шарипов Отабек</a>
+            </div>
+        </div>
+     </div>
+        <div id="wot-new-assistant-container">
+        </div>
+    </body>
+    {% endblock %}
+</html>

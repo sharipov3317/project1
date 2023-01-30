@@ -1,0 +1,34 @@
+{% extends 'home.html' %}
+
+{% block title %}
+Обнавление
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <div class="header">
+        <img class="logo" src="static/ap.jpg" alt="wallpaper">
+        <h1>БУРГЕР</h1>
+        <h2>Добро Пожаловать</h2>
+    </div>
+    <div class="links">
+        <a href="/">Главная</a>
+        <a href="/2home">Меню</a>
+        <a href="/3home">О нашей кафе</a>
+        <a href="/create-article">Регистрация</a>
+    </div>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/create.css') }}">
+    <h3>Регистрация</h3>
+    <form method="post">                                   
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите ваша имя"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите ваша фамилия"></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Оставьте комментарий"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Отправить">
+    </form>
+</div> 
+
+{% endblock %}          
+

@@ -1,0 +1,66 @@
+{% extends 'home.html' %}
+<!DOCTYPE html>
+<html lang="RU">
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+<body>
+    <span id="warning-container"></span>
+  <div class="container">
+    <div class="header">
+        <img class="logo" src="static/ap.jpg" alt="wallpaper">
+        <h1>БУРГЕР</h1>
+        <h2>Добро Пожаловать</h2>
+    </div>
+    <div class="links">
+        <a href="/">Главная</a>
+        <a href="/2home">Меню</a>
+        <a href="/3home">О нашей кафе</a>
+        <a href="/create-article">Регистрация</a>
+    </div>
+    <div class="content">
+        <div class="up_block">
+            <div class="sidebar">
+                <h3>Википедия о нашем кафе</h3>
+                <img class="sidebar_logo" src="static/ap.jpg" alt="wallpaper">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Saepe doloremque vitae ducimus earum perspiciatis distinctio! 
+                   Odio, explicabo. Consectetur similique pariatur accusamus, 
+                   impedit consequuntur laboriosam deserunt delectus animi. 
+                   Dolore mollitia corrupti, nam voluptates praesentium similique, 
+                   magni aperiam ea architecto vero non!
+                </p>
+            </div>
+            <h3>Какие продукты мы используем для приготовления гамбургеров ?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Laudantium adipisci recusandae sunt est placeat quod fugiat 
+               fugit nostrum exercitationem quisquam. Lorem ipsum dolor sit amet 
+               consectetur, adipisicing elit. In inventore minima libero incidunt 
+               debitis nihil, laborum vel quia, excepturi consequatur laudantium 
+               aliquid? Quisquam ad omnis officiis unde magni vero molestias 
+               accusamus itaque iusto quasi facere quam sed autem molestiae 
+               dolor illo, quod dolore maiores? Porro quisquam odio repudiandae  
+               cupiditate delectus ea enim qui placeat, eveniet animi tempora 
+               doloremque voluptate.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Закажите и получите скидку</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, 
+                ea veritatis ipsum hic suscipit exercitationem.
+            </p>
+        </div>
+    </div>
+    <div class="end">
+        <div class="copyright">
+            <p>Copyright 2022 &copy;</p>
+        </div>
+        <div class="email">
+            <a>Шарипов Отабек</a>
+        </div>
+    </div>
+  </div>
+  <div id="wot-new-assistant-container">
+  </div>
+</body>
+{% endblock %}
+</html>

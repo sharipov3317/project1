@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detail.css') }}">
+    <h3>{{ article.title }}</h3>
+        <div class="quand">
+            <p>{{article.text}}</p>
+            <p><b>Дата: {{article.date.date() }}</b></p>
+            <a href="/posts/{{article.id}}/del" class="btn">Удалить</a>
+            <a href="/posts/{{article.id}}/update" class="btn">Редактировать</a>
+        </div>
+</div>
+{% endblock %}
